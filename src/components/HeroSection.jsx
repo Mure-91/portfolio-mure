@@ -12,7 +12,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen relative flex items-center justify-center overflow-hidden pt-16 md:pt-0"
+      className="min-h-screen relative flex items-center justify-center overflow-hidden pt-28 sm:pt-24 md:pt-0 pb-12"
     >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
