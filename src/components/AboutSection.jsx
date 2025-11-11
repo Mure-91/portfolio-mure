@@ -22,7 +22,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="py-16 sm:py-20 md:py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-black to-black"></div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
         <div

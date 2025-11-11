@@ -1,8 +1,8 @@
 import { ChevronDown, Mail, Phone } from 'lucide-react';
 
 export default function HeroSection() {
-  const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToPortfolio = () => {
+    document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const scrollToContact = () => {
@@ -131,9 +131,9 @@ export default function HeroSection() {
           {/* Scroll indicator */}
           <div className="flex justify-center">
             <button
-              onClick={scrollToAbout}
+              onClick={scrollToPortfolio}
               className="animate-gentle-bounce hover:scale-105 transition-all duration-500 group"
-              aria-label="Scroll to about section"
+              aria-label="Scroll to portfolio section"
             >
               <div className="glass glass-hover rounded-full p-3 sm:p-4 w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center border border-white/10">
                 <ChevronDown className="w-6 h-6 sm:w-8 sm:h-8 text-white group-hover:text-white/80 transition-colors duration-300" />

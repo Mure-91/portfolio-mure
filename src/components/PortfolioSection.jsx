@@ -75,7 +75,7 @@ export default function PortfolioSection() {
   return (
     <section
       id="portfolio"
-      className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-black to-gray-900/80 relative overflow-hidden"
+      className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-gray-800 via-black to-gray-900 relative overflow-hidden"
     >
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-30">
