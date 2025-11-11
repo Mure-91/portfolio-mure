@@ -25,8 +25,8 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
         <div className="animate-fade-in-up">
           {/* Greeting with Profile Image */}
-          <div className="flex items-center justify-center mb-6 sm:mb-8">
-            <div className="glass rounded-full p-1 mr-3 sm:mr-4 border border-white/10">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+            <div className="glass rounded-full p-1 border border-white/10">
               <img
                 src="/profile-hero.jpg"
                 alt="Luca Murelli"
