@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['Lato', 'system-ui', '-apple-system', 'sans-serif'],
+        'heading': ['Proxima Nova', 'system-ui', '-apple-system', 'sans-serif'],
+        'accent': ['Playfair Display', 'Georgia', 'serif'],
+      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
