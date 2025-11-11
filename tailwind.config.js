@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'sans': ['Lato', 'system-ui', '-apple-system', 'sans-serif'],
-        'heading': ['Proxima Nova', 'system-ui', '-apple-system', 'sans-serif'],
+        'heading': ['Nunito', 'system-ui', '-apple-system', 'sans-serif'],
         'accent': ['Playfair Display', 'Georgia', 'serif'],
       },
       colors: {
