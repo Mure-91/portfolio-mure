@@ -58,7 +58,7 @@ export default function SkillsSection() {
               Competenze Tecniche
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-white/75 max-w-3xl mx-auto">
-              Stack tecnologico e specializzazioni professionali
+              Stack tecnologico moderno per progetti ad alte prestazioni
             </p>
             <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full mt-4"></div>
           </div>

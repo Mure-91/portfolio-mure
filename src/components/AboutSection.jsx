@@ -33,7 +33,7 @@ export default function AboutSection() {
           {/* Section Title */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">
-              Chi Sono
+              Ciao, sono Luca
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
           </div>
@@ -55,14 +55,13 @@ export default function AboutSection() {
             <div className="space-y-6 text-center lg:text-left">
               <div className="space-y-4 text-white/75 leading-relaxed text-base sm:text-lg">
                 <p>
-                  Da sempre uno <strong className="text-white font-semibold">"smanettone"</strong> - quella persona che smonta e rimonta tutto per capire come funziona.
+                  Da anni aiuto imprenditori e brand a trasformare la loro visione in realtà digitali che funzionano davvero.
                 </p>
                 <p>
-                  Nel tempo questa passione è diventata il mio lavoro. Specializzato nello sviluppo con{' '}
-                  <strong className="text-white font-semibold">CMS moderni</strong> e{' '}
-                  <strong className="text-white font-semibold">visual builder</strong>, con particolare focus su{' '}
-                  <strong className="text-white font-semibold">WordPress</strong> e{' '}
-                  <strong className="text-white font-semibold">Shopify</strong>.
+                  Non mi limito a creare siti belli: costruisco esperienze che convertono visitatori in clienti, ottimizzate per performance e pensate per crescere nel tempo.
+                </p>
+                <p>
+                  Lavoro con tecnologie moderne come React, Next.js e Tailwind CSS per garantire siti veloci, scalabili e facili da gestire.
                 </p>
               </div>
 

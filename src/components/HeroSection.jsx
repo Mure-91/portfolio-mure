@@ -1,4 +1,4 @@
-import { ChevronDown, Mail, Phone } from 'lucide-react';
+import { ChevronDown, Mail } from 'lucide-react';
 
 export default function HeroSection() {
   const scrollToPortfolio = () => {
@@ -43,13 +43,10 @@ export default function HeroSection() {
           {/* Main heading */}
           <div className="relative mb-8 sm:mb-12">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white mb-4">
-              Luca Murelli
+              Trasformo idee in esperienze digitali che conquistano
             </h1>
-            <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-white/90 mb-4">
-              Sviluppatore Web Freelance
-            </p>
             <p className="text-base sm:text-lg md:text-xl text-white/75 max-w-3xl mx-auto">
-              Oltre 6 anni di esperienza nella realizzazione di siti web, landing page ed e-commerce ad alte prestazioni
+              Web Designer & Developer specializzato in siti web ad alte prestazioni per brand e startup che vogliono distinguersi online
             </p>
 
             {/* Floating icons */}
@@ -109,23 +106,22 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <button
               onClick={scrollToContact}
-              className="glass glass-hover border border-white/20 hover:border-white/40 text-white font-semibold px-8 py-4 rounded-xl group transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 w-full sm:w-auto"
+              className="bg-[#60a5fa] hover:bg-[#3b82f6] border border-white/20 hover:border-white/40 text-white font-semibold px-8 py-4 rounded-xl group transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 w-full sm:w-auto"
             >
               <span className="flex items-center justify-center space-x-2">
                 <Mail className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-                <span>Contattami</span>
+                <span>Iniziamo il tuo progetto</span>
               </span>
             </button>
 
-            <a
-              href="tel:+393470669058"
-              className="glass glass-hover border border-white/20 hover:border-white/40 text-white font-semibold px-8 py-4 rounded-xl group transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 w-full sm:w-auto"
+            <button
+              onClick={scrollToPortfolio}
+              className="bg-[#60a5fa] hover:bg-[#3b82f6] border border-white/20 hover:border-white/40 text-white font-semibold px-8 py-4 rounded-xl group transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 w-full sm:w-auto"
             >
               <span className="flex items-center justify-center space-x-2">
-                <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-                <span>+39 347 066 9058</span>
+                <span>Scopri come lavoro</span>
               </span>
-            </a>
+            </button>
           </div>
 
           {/* Scroll indicator */}
