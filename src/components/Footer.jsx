@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 mb-8">
           {/* About */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
               Luca Murelli<span className="text-blue-400">.</span>
             </h3>
@@ -18,9 +18,9 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="text-lg font-semibold text-white mb-4">Link Rapidi</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 flex flex-col items-center md:items-start">
               {['Home', 'Chi Sono', 'Portfolio', 'Competenze'].map((item) => (
                 <li key={item}>
                   <a
@@ -35,9 +35,9 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="text-lg font-semibold text-white mb-4">Contatti</h4>
-            <div className="space-y-3">
+            <div className="space-y-3 flex flex-col items-center md:items-start">
               <a
                 href="mailto:luca.murelli.91@gmail.com"
                 className="flex items-center space-x-2 text-white/60 hover:text-white transition-colors duration-300 text-sm sm:text-base"
