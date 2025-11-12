@@ -16,8 +16,8 @@ export default function Navbar() {
 
   const menuItems = [
     { label: 'Home', href: '#home' },
-    { label: 'Chi Sono', href: '#about' },
     { label: 'Portfolio', href: '#portfolio' },
+    { label: 'Chi Sono', href: '#about' },
     { label: 'Competenze', href: '#skills' },
   ];
 
@@ -33,9 +33,14 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? 'glass border-b border-white/10 shadow-lg shadow-black/20'
-          : 'bg-transparent'
+          ? 'border-b border-white/10 shadow-lg shadow-black/20'
+          : ''
       }`}
+      style={{
+        background: isScrolled ? 'rgba(15, 23, 42, 0.8)' : 'rgba(15, 23, 42, 0.3)',
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)'
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 sm:h-20">

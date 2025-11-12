@@ -1,4 +1,5 @@
 import { ChevronDown, Mail } from 'lucide-react';
+import { DotShaderBackground } from './ui/DotShaderBackground';
 
 export default function HeroSection() {
   const scrollToPortfolio = () => {
@@ -12,15 +13,12 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen relative flex items-center justify-center overflow-hidden pt-28 sm:pt-24 md:pt-0 pb-12"
+      className="min-h-screen relative flex items-center justify-center overflow-hidden pt-28 sm:pt-24 md:pt-0 pb-12 bg-[#0f172a]"
     >
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
-
-      {/* Animated background elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-float-1"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl animate-float-2"></div>
-      <div className="absolute top-1/2 left-1/2 w-36 h-36 bg-cyan-500/10 rounded-full blur-3xl animate-float-3"></div>
+      {/* DOT SHADER BACKGROUND con WebGL */}
+      <div className="absolute inset-0">
+        <DotShaderBackground />
+      </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
         <div className="animate-fade-in-up">

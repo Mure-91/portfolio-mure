@@ -5,18 +5,26 @@ import SkillsSection from './components/SkillsSection';
 import PortfolioSection from './components/PortfolioSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import { ThemeProvider } from './providers/ThemeProvider';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900">
-      <Navbar />
-      <HeroSection />
-      <PortfolioSection />
-      <AboutSection />
-      <SkillsSection />
-      <ContactSection />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div
+        className="min-h-screen"
+        style={{
+          background: 'linear-gradient(to bottom, #0f172a 0%, #0a0f1a 30%, #050810 60%, #000000 100%)'
+        }}
+      >
+        <Navbar />
+        <HeroSection />
+        <PortfolioSection />
+        <AboutSection />
+        <SkillsSection />
+        <ContactSection />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

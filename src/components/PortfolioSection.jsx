@@ -143,7 +143,7 @@ export default function PortfolioSection() {
   return (
     <section
       id="portfolio"
-      className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-gray-800 via-black to-gray-900 relative overflow-hidden"
+      className="py-16 sm:py-20 md:py-24 relative overflow-hidden"
     >
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-30">
@@ -268,10 +268,9 @@ export default function PortfolioSection() {
         {/* Modal Popup - React Portal */}
         {selectedProject && createPortal(
           <div
-            className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-fadeIn"
             onClick={() => setSelectedProject(null)}
             style={{
-              animation: 'fadeIn 0.3s ease-out',
               overflow: 'hidden',
               zIndex: 9999,
               position: 'fixed',
@@ -282,21 +281,29 @@ export default function PortfolioSection() {
             }}
           >
             <div
-              className="bg-[#1e293b] rounded-2xl w-full shadow-2xl overflow-y-auto"
+              className="rounded-2xl w-full shadow-2xl overflow-y-auto animate-zoomInSlow"
               onClick={(e) => e.stopPropagation()}
               style={{
-                animation: 'zoomIn 0.4s ease-out',
                 maxWidth: '1150px',
                 maxHeight: '90vh',
                 position: 'relative',
-                zIndex: 10000
+                zIndex: 10000,
+                background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #1e293b 100%)',
+                border: '1px solid rgba(71, 85, 105, 0.3)',
+                boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(71, 85, 105, 0.2)'
               }}
             >
               {/* Close Button */}
               <div className="sticky top-0 z-10 flex justify-end p-2 md:p-4">
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="bg-[#0f172a] hover:bg-[#334155] rounded-full w-10 h-10 flex items-center justify-center transition-colors"
+                  className="rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  style={{
+                    background: 'rgba(15, 23, 42, 0.8)',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(71, 85, 105, 0.3)',
+                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.3)'
+                  }}
                 >
                   <span className="text-white text-2xl">×</span>
                 </button>
@@ -304,36 +311,52 @@ export default function PortfolioSection() {
 
               <div className="px-4 md:px-8 pb-4 md:pb-8">
                 <div className="max-w-[1100px] mx-auto md:mx-0">
-                  {/* Title */}
-                  <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">
-                    {selectedProject.title}
-                  </h2>
+                  {/* Title con glassmorphism sottile */}
+                  <div className="mb-6 pb-4" style={{
+                    borderBottom: '1px solid rgba(71, 85, 105, 0.2)'
+                  }}>
+                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">
+                      {selectedProject.title}
+                    </h2>
 
-                  {/* Meta Info */}
-                  <div className="flex flex-wrap gap-2 md:gap-4 mb-4 md:mb-6 text-gray-400 text-xs md:text-sm">
-                    <span><strong className="text-gray-300">Cliente:</strong> {selectedProject.client}</span>
-                    <span><strong className="text-gray-300">Industry:</strong> {selectedProject.industry}</span>
-                    <span><strong className="text-gray-300">Anno:</strong> {selectedProject.year}</span>
+                    {/* Meta Info */}
+                    <div className="flex flex-wrap gap-2 md:gap-4 text-gray-400 text-xs md:text-sm">
+                      <span><strong className="text-gray-300">Cliente:</strong> {selectedProject.client}</span>
+                      <span><strong className="text-gray-300">Industry:</strong> {selectedProject.industry}</span>
+                      <span><strong className="text-gray-300">Anno:</strong> {selectedProject.year}</span>
+                    </div>
                   </div>
 
-                  {/* Challenge */}
-                  <div className="mb-4 md:mb-6">
+                  {/* Challenge - Card interna */}
+                  <div className="mb-4 md:mb-6 p-4 md:p-5 rounded-xl" style={{
+                    background: 'rgba(15, 23, 42, 0.4)',
+                    border: '1px solid rgba(71, 85, 105, 0.2)',
+                    backdropFilter: 'blur(10px)'
+                  }}>
                     <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3">Challenge</h3>
                     <p className="text-gray-300 leading-relaxed text-sm md:text-base">
                       {selectedProject.challenge}
                     </p>
                   </div>
 
-                  {/* Solution */}
-                  <div className="mb-4 md:mb-6">
+                  {/* Solution - Card interna */}
+                  <div className="mb-4 md:mb-6 p-4 md:p-5 rounded-xl" style={{
+                    background: 'rgba(15, 23, 42, 0.4)',
+                    border: '1px solid rgba(71, 85, 105, 0.2)',
+                    backdropFilter: 'blur(10px)'
+                  }}>
                     <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3">Solution</h3>
                     <p className="text-gray-300 leading-relaxed text-sm md:text-base">
                       {selectedProject.solution}
                     </p>
                   </div>
 
-                  {/* Results */}
-                  <div className="mb-4 md:mb-6">
+                  {/* Results - Card interna */}
+                  <div className="mb-4 md:mb-6 p-4 md:p-5 rounded-xl" style={{
+                    background: 'rgba(15, 23, 42, 0.4)',
+                    border: '1px solid rgba(71, 85, 105, 0.2)',
+                    backdropFilter: 'blur(10px)'
+                  }}>
                     <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3">Results</h3>
                     <ul className="space-y-1 md:space-y-2">
                       {selectedProject.results.map((result, i) => (
@@ -345,27 +368,45 @@ export default function PortfolioSection() {
                     </ul>
                   </div>
 
-                  {/* Technologies */}
-                  <div className="mb-4 md:mb-6">
+                  {/* Technologies - Card interna */}
+                  <div className="mb-4 md:mb-6 p-4 md:p-5 rounded-xl" style={{
+                    background: 'rgba(15, 23, 42, 0.4)',
+                    border: '1px solid rgba(71, 85, 105, 0.2)',
+                    backdropFilter: 'blur(10px)'
+                  }}>
                     <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3">Technologies</h3>
                     <div className="flex flex-wrap gap-2">
                       {selectedProject.tags?.map((tech, i) => (
-                        <span key={i} className="bg-[#0f172a] text-gray-300 px-3 md:px-4 py-1 md:py-2 rounded-lg text-xs md:text-sm border border-gray-700">
+                        <span
+                          key={i}
+                          className="text-gray-300 px-3 md:px-4 py-1 md:py-2 rounded-lg text-xs md:text-sm transition-all duration-300 hover:scale-105"
+                          style={{
+                            background: 'rgba(15, 23, 42, 0.6)',
+                            border: '1px solid rgba(71, 85, 105, 0.3)'
+                          }}
+                        >
                           {tech}
                         </span>
                       ))}
                     </div>
                   </div>
 
-                  {/* Live Preview Iframe */}
+                  {/* Live Preview Iframe - Card interna */}
                   {selectedProject.iframeUrl && (
-                    <div className="mb-4 md:mb-6">
+                    <div className="mb-4 md:mb-6 p-4 md:p-5 rounded-xl" style={{
+                      background: 'rgba(15, 23, 42, 0.4)',
+                      border: '1px solid rgba(71, 85, 105, 0.2)',
+                      backdropFilter: 'blur(10px)'
+                    }}>
                       <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3">Live Preview</h3>
 
                       {/* MacBook Frame */}
-                      <div className="bg-[#0f172a] p-2 md:p-3 rounded-xl md:rounded-2xl" style={{ maxWidth: '1100px' }}>
+                      <div className="rounded-xl md:rounded-2xl overflow-hidden" style={{
+                        maxWidth: '1100px',
+                        boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.5)'
+                      }}>
                         {/* Top bar MacBook style - NASCOSTO SU MOBILE */}
-                        <div className="hidden md:flex bg-[#1a1a1a] rounded-t-lg px-4 py-2 items-center gap-2 mb-1">
+                        <div className="hidden md:flex bg-[#1a1a1a] px-4 py-2 items-center gap-2">
                           <div className="flex gap-2">
                             <div className="w-3 h-3 rounded-full bg-[#ff5f57]"></div>
                             <div className="w-3 h-3 rounded-full bg-[#febc2e]"></div>
@@ -379,10 +420,7 @@ export default function PortfolioSection() {
                         </div>
 
                         {/* Iframe container - RESPONSIVE */}
-                        <div className="bg-white rounded-lg md:rounded-b-lg overflow-hidden relative iframe-height-container" style={{
-                          width: '100%',
-                          paddingBottom: '168.75%'
-                        }}>
+                        <div className="bg-white overflow-hidden relative iframe-height-container">
                           <style>{`
                             @media (min-width: 768px) {
                               .iframe-height-container {
@@ -425,21 +463,31 @@ export default function PortfolioSection() {
                     </div>
                   )}
 
-                  {/* Action Buttons */}
+                  {/* Action Buttons - Stile migliorato */}
                   <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                     {selectedProject.link && (
                       <a
                         href={selectedProject.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-[#60a5fa] hover:bg-[#3b82f6] text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 text-center text-sm md:text-base"
+                        className="text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 text-center text-sm md:text-base hover:scale-105"
+                        style={{
+                          background: 'linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%)',
+                          boxShadow: '0 4px 6px -1px rgba(59, 130, 246, 0.3)'
+                        }}
                       >
                         Visita il sito
                       </a>
                     )}
                     <button
                       onClick={() => setSelectedProject(null)}
-                      className="bg-[#334155] hover:bg-[#475569] text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 text-sm md:text-base"
+                      className="font-semibold px-6 py-3 rounded-lg transition-all duration-300 text-sm md:text-base hover:scale-105"
+                      style={{
+                        background: 'rgba(51, 65, 85, 0.8)',
+                        color: 'white',
+                        border: '1px solid rgba(71, 85, 105, 0.3)',
+                        backdropFilter: 'blur(10px)'
+                      }}
                     >
                       Chiudi
                     </button>
