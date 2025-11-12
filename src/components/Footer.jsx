@@ -4,8 +4,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative py-12 sm:py-16 bg-gradient-to-b from-gray-900 to-black border-t border-white/10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <footer
+      className="relative py-12 sm:py-16 bg-black border-t"
+      style={{
+        borderColor: 'rgba(255, 255, 255, 0.03)'
+      }}
+    >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 mb-8">
           {/* About */}
           <div className="text-center md:text-left">

@@ -21,8 +21,21 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <section id="about" className="pt-16 pb-16 sm:pt-20 sm:pb-20 md:pt-32 md:pb-24 relative">
-      <div className="absolute inset-0"></div>
+    <section
+      id="about"
+      className="pt-16 pb-16 sm:pt-20 sm:pb-20 md:pt-32 md:pb-24 relative"
+      style={{
+        background: 'linear-gradient(to bottom, #050810 0%, #030609 100%)'
+      }}
+    >
+      {/* Dots ancora più sottili */}
+      <div
+        className="absolute inset-0 opacity-15 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle, rgba(255, 255, 255, 0.025) 1px, transparent 1px)',
+          backgroundSize: '30px 30px'
+        }}
+      />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
         <div

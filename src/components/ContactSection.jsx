@@ -46,8 +46,18 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 md:py-24 relative overflow-hidden">
-      <div className="absolute inset-0"></div>
+    <section
+      id="contact"
+      className="py-16 sm:py-20 md:py-24 relative overflow-hidden bg-black"
+    >
+      {/* Trace dots appena percettibili */}
+      <div
+        className="absolute inset-0 opacity-5 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle, rgba(255, 255, 255, 0.01) 1px, transparent 1px)',
+          backgroundSize: '30px 30px'
+        }}
+      />
 
       {/* Decorative elements */}
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-float-1"></div>

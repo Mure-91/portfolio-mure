@@ -144,14 +144,27 @@ export default function PortfolioSection() {
     <section
       id="portfolio"
       className="py-16 sm:py-20 md:py-24 relative overflow-hidden"
+      style={{
+        background: 'linear-gradient(to bottom, #070b14 0%, #050810 100%)'
+      }}
     >
-      {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl animate-float-1"></div>
-        <div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-float-2"
-        ></div>
-      </div>
+      {/* Dots CSS sottili per continuità visiva */}
+      <div
+        className="absolute inset-0 opacity-25 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px)',
+          backgroundSize: '30px 30px'
+        }}
+      />
+
+      {/* Fade superiore per blend con Hero */}
+      <div
+        className="absolute top-0 left-0 right-0 pointer-events-none"
+        style={{
+          height: '120px',
+          background: 'linear-gradient(to bottom, rgba(7, 11, 20, 0.6) 0%, transparent 100%)'
+        }}
+      />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Title */}

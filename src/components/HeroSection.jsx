@@ -39,26 +39,13 @@ export default function HeroSection() {
           </div>
 
           {/* Main heading */}
-          <div className="relative mb-8 sm:mb-12">
+          <div className="mb-8 sm:mb-12">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white mb-4">
               Trasformo idee in esperienze digitali che conquistano
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-white/75 max-w-3xl mx-auto">
               Web Designer & Developer specializzato in siti web ad alte prestazioni per brand e startup che vogliono distinguersi online
             </p>
-
-            {/* Floating icons */}
-            <div className="absolute -top-8 sm:-top-12 -left-4 sm:-left-16 animate-float-1 transform rotate-12">
-              <div className="glass glass-hover rounded-xl sm:rounded-2xl p-3 sm:p-4 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center border border-white/10">
-                <span className="text-2xl sm:text-3xl md:text-4xl">💻</span>
-              </div>
-            </div>
-
-            <div className="absolute top-12 sm:top-16 -right-4 sm:-right-16 animate-float-2 transform -rotate-6">
-              <div className="glass glass-hover rounded-xl sm:rounded-2xl p-3 sm:p-4 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center border border-white/10">
-                <span className="text-2xl sm:text-3xl md:text-4xl">🚀</span>
-              </div>
-            </div>
           </div>
 
           {/* Stats Cards */}
@@ -136,6 +123,15 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      {/* Fade overlay verso Portfolio */}
+      <div
+        className="absolute bottom-0 left-0 right-0 pointer-events-none z-20"
+        style={{
+          height: '250px',
+          background: 'linear-gradient(to bottom, transparent 0%, rgba(7, 11, 20, 0.7) 50%, rgba(7, 11, 20, 0.95) 100%)'
+        }}
+      />
     </section>
   );
 }

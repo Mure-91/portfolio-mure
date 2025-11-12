@@ -39,12 +39,21 @@ export default function SkillsSection() {
   };
 
   return (
-    <section id="skills" className="py-16 sm:py-20 md:py-24 relative overflow-hidden">
-      <div className="absolute inset-0"></div>
-
-      {/* Decorative elements */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-float-1"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float-2"></div>
+    <section
+      id="skills"
+      className="py-16 sm:py-20 md:py-24 relative overflow-hidden"
+      style={{
+        background: 'linear-gradient(to bottom, #030609 0%, #010203 100%)'
+      }}
+    >
+      {/* Dots minimi */}
+      <div
+        className="absolute inset-0 opacity-10 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle, rgba(255, 255, 255, 0.015) 1px, transparent 1px)',
+          backgroundSize: '30px 30px'
+        }}
+      />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div
