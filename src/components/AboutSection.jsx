@@ -80,26 +80,34 @@ export default function AboutSection() {
 
               {/* Key Skills Icons */}
               <div className="grid grid-cols-2 gap-4 pt-6">
-                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group">
-                  <Search className="w-8 h-8 text-blue-400 mb-2 group-hover:scale-110 transition-transform" />
+                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group text-center md:text-left">
+                  <div className="flex justify-center md:justify-start mb-2">
+                    <Search className="w-8 h-8 text-blue-400 group-hover:scale-110 transition-transform" />
+                  </div>
                   <p className="text-white font-semibold text-sm">SEO Tecnica</p>
                   <p className="text-white/60 text-xs mt-1">Ottimizzazione avanzata</p>
                 </div>
 
-                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group">
-                  <TrendingUp className="w-8 h-8 text-purple-400 mb-2 group-hover:scale-110 transition-transform" />
+                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group text-center md:text-left">
+                  <div className="flex justify-center md:justify-start mb-2">
+                    <TrendingUp className="w-8 h-8 text-purple-400 group-hover:scale-110 transition-transform" />
+                  </div>
                   <p className="text-white font-semibold text-sm">CRO</p>
                   <p className="text-white/60 text-xs mt-1">Ottimizzazione conversioni</p>
                 </div>
 
-                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group">
-                  <Code2 className="w-8 h-8 text-green-400 mb-2 group-hover:scale-110 transition-transform" />
+                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group text-center md:text-left">
+                  <div className="flex justify-center md:justify-start mb-2">
+                    <Code2 className="w-8 h-8 text-green-400 group-hover:scale-110 transition-transform" />
+                  </div>
                   <p className="text-white font-semibold text-sm">Sviluppo</p>
                   <p className="text-white/60 text-xs mt-1">WordPress & Shopify</p>
                 </div>
 
-                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group">
-                  <Server className="w-8 h-8 text-cyan-400 mb-2 group-hover:scale-110 transition-transform" />
+                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group text-center md:text-left">
+                  <div className="flex justify-center md:justify-start mb-2">
+                    <Server className="w-8 h-8 text-cyan-400 group-hover:scale-110 transition-transform" />
+                  </div>
                   <p className="text-white font-semibold text-sm">Hosting</p>
                   <p className="text-white/60 text-xs mt-1">Gestione completa</p>
                 </div>

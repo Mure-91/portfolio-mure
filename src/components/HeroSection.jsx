@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen relative flex items-center justify-center overflow-hidden pt-28 sm:pt-24 md:pt-0 pb-12 bg-[#0f172a]"
+      className="min-h-screen relative flex items-center justify-center overflow-hidden pt-28 sm:pt-24 md:pt-20 pb-12 bg-[#0f172a]"
     >
       {/* DOT SHADER BACKGROUND con WebGL */}
       <div className="absolute inset-0">
