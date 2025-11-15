@@ -70,7 +70,7 @@ export default function ContactSection() {
             Contattami
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/75 max-w-3xl mx-auto">
-            Hai un progetto in mente? Parliamone insieme!
+            Realizziamo qualcosa insieme?
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mt-4"></div>
         </div>

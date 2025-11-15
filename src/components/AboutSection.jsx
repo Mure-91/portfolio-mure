@@ -55,47 +55,34 @@ export default function AboutSection() {
             {/* Profile Image */}
             <div className="flex justify-center lg:justify-start">
               <div className="relative group">
-                <div className="absolute -inset-4 glass rounded-full opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                <div className="absolute -inset-8 glass rounded-full opacity-30 group-hover:opacity-50 transition-opacity"></div>
                 <img
                   src="/profile.png"
                   alt="Luca Murelli - Sviluppatore Web Freelance"
-                  className="relative rounded-full border-4 border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 w-64 h-64 sm:w-80 sm:h-80 object-cover"
+                  className="relative rounded-full border-4 border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 w-80 h-80 sm:w-[420px] sm:h-[420px] object-cover"
                 />
               </div>
             </div>
 
             {/* About Content */}
-            <div className="space-y-6 text-center lg:text-left">
-              <div className="space-y-4 text-white/75 leading-relaxed text-base sm:text-lg">
+            <div className="space-y-8 text-center lg:text-left">
+              <div className="space-y-4 text-white/75 leading-relaxed md:leading-8 text-base sm:text-xl md:text-xl">
                 <p>
-                  Da anni aiuto imprenditori e brand a trasformare la loro visione in realtà digitali che funzionano davvero.
+                  Sono un web developer freelance che da 6 anni aiuta aziende, e-commerce e professionisti a costruire la loro presenza digitale.
                 </p>
                 <p>
-                  Non mi limito a creare siti belli: costruisco esperienze che convertono visitatori in clienti, ottimizzate per performance e pensate per crescere nel tempo.
+                  Il mio approccio è semplice: capisco cosa ti serve, scelgo le tecnologie giuste e costruisco un sito che fa esattamente quello che deve fare. Senza fronzoli, senza perdite di tempo.
                 </p>
                 <p>
-                  Lavoro con tecnologie moderne come React, Next.js e Tailwind CSS per garantire siti veloci, scalabili e facili da gestire.
+                  Lavoro principalmente con WordPress e Shopify, ma mi piace sperimentare anche con l'AI e altre tecnologie che possono rendere il tuo sito più performante e intelligente.
+                </p>
+                <p>
+                  Che tu abbia già tutto chiaro o sia solo all'inizio, posso aiutarti a trasformare la tua idea in un sito web professionale che ti rappresenta davvero.
                 </p>
               </div>
 
               {/* Key Skills Icons */}
               <div className="grid grid-cols-2 gap-4 pt-6">
-                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group text-center md:text-left">
-                  <div className="flex justify-center md:justify-start mb-2">
-                    <Search className="w-8 h-8 text-blue-400 group-hover:scale-110 transition-transform" />
-                  </div>
-                  <p className="text-white font-semibold text-sm">SEO Tecnica</p>
-                  <p className="text-white/60 text-xs mt-1">Ottimizzazione avanzata</p>
-                </div>
-
-                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group text-center md:text-left">
-                  <div className="flex justify-center md:justify-start mb-2">
-                    <TrendingUp className="w-8 h-8 text-purple-400 group-hover:scale-110 transition-transform" />
-                  </div>
-                  <p className="text-white font-semibold text-sm">CRO</p>
-                  <p className="text-white/60 text-xs mt-1">Ottimizzazione conversioni</p>
-                </div>
-
                 <div className="glass glass-hover rounded-xl p-4 border border-white/10 group text-center md:text-left">
                   <div className="flex justify-center md:justify-start mb-2">
                     <Code2 className="w-8 h-8 text-green-400 group-hover:scale-110 transition-transform" />
@@ -110,6 +97,22 @@ export default function AboutSection() {
                   </div>
                   <p className="text-white font-semibold text-sm">Hosting</p>
                   <p className="text-white/60 text-xs mt-1">Gestione completa</p>
+                </div>
+
+                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group text-center md:text-left">
+                  <div className="flex justify-center md:justify-start mb-2">
+                    <TrendingUp className="w-8 h-8 text-purple-400 group-hover:scale-110 transition-transform" />
+                  </div>
+                  <p className="text-white font-semibold text-sm">CRO</p>
+                  <p className="text-white/60 text-xs mt-1">Ottimizzazione conversioni</p>
+                </div>
+
+                <div className="glass glass-hover rounded-xl p-4 border border-white/10 group text-center md:text-left">
+                  <div className="flex justify-center md:justify-start mb-2">
+                    <Search className="w-8 h-8 text-blue-400 group-hover:scale-110 transition-transform" />
+                  </div>
+                  <p className="text-white font-semibold text-sm">SEO Tecnica</p>
+                  <p className="text-white/60 text-xs mt-1">Ottimizzazione avanzata</p>
                 </div>
               </div>
             </div>

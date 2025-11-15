@@ -20,31 +20,32 @@ export default function HeroSection() {
         <DotShaderBackground />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center pt-6 sm:pt-8">
         <div className="animate-fade-in-up">
           {/* Greeting with Profile Image */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <div className="glass rounded-full p-1 border border-white/10">
+          <div className="flex flex-col items-center justify-center gap-4 mb-6 sm:mb-8">
+            <div className="rounded-full p-1 border border-white/10">
               <img
                 src="/profile-hero.jpg"
                 alt="Luca Murelli"
-                className="rounded-full w-10 h-10 sm:w-[60px] sm:h-[60px] object-cover"
+                className="rounded-full w-20 h-20 sm:w-28 sm:h-28 object-cover"
               />
             </div>
-            <div className="glass rounded-full px-4 sm:px-6 py-2 sm:py-3 border border-white/10">
-              <p className="text-sm sm:text-base text-white/75">
-                Benvenuto nel mio <strong className="text-white">portfolio professionale</strong> 👋
-              </p>
-            </div>
+            <p className="text-lg sm:text-xl md:text-2xl text-white/75 font-medium">
+              Benvenuto nel mio <strong className="text-white">portfolio professionale</strong> 👋
+            </p>
           </div>
 
           {/* Main heading */}
           <div className="mb-8 sm:mb-12">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white mb-4">
-              Trasformo idee in esperienze digitali che conquistano
+              REALIZZO IL TUO SITO WEB. 
+              professionale. veloce. efficace.
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-white/75 max-w-3xl mx-auto">
-              Web Designer & Developer specializzato in siti web ad alte prestazioni per brand e startup che vogliono distinguersi online
+              Sviluppatore web freelance con 6 anni di esperienza. 
+              Specializzato in siti web, e-commerce e soluzioni AI. 
+              Trasformo la tua idea nel sito web che desideri.
             </p>
           </div>
 
@@ -56,7 +57,7 @@ export default function HeroSection() {
                   🎯
                 </div>
                 <div className="text-left">
-                  <p className="font-semibold text-white text-sm sm:text-base">6+ Anni</p>
+                  <p className="font-semibold text-white text-sm sm:text-base">6 Anni</p>
                   <p className="text-white/60 text-xs sm:text-sm">di esperienza</p>
                 </div>
               </div>
@@ -65,11 +66,11 @@ export default function HeroSection() {
             <div className="glass glass-hover rounded-xl p-4 sm:p-6 border border-white/10 group">
               <div className="flex items-center justify-center space-x-3">
                 <div className="text-2xl sm:text-3xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
-                  🛒
+                  🚀
                 </div>
                 <div className="text-left">
-                  <p className="font-semibold text-white text-sm sm:text-base">E-commerce</p>
-                  <p className="text-white/60 text-xs sm:text-sm">& Landing Page</p>
+                  <p className="font-semibold text-white text-sm sm:text-base">Siti Veloci</p>
+                  <p className="text-white/60 text-xs sm:text-sm">Ottimizzati SEO</p>
                 </div>
               </div>
             </div>
@@ -77,11 +78,11 @@ export default function HeroSection() {
             <div className="glass glass-hover rounded-xl p-4 sm:p-6 border border-white/10 group sm:col-span-2 lg:col-span-1">
               <div className="flex items-center justify-center space-x-3">
                 <div className="text-2xl sm:text-3xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
-                  ⚡
+                  📱
                 </div>
                 <div className="text-left">
-                  <p className="font-semibold text-white text-sm sm:text-base">AI-Assisted</p>
-                  <p className="text-white/60 text-xs sm:text-sm">Development</p>
+                  <p className="font-semibold text-white text-sm sm:text-base">100% Responsive</p>
+                  <p className="text-white/60 text-xs sm:text-sm">Mobile-First</p>
                 </div>
               </div>
             </div>
@@ -95,7 +96,7 @@ export default function HeroSection() {
             >
               <span className="flex items-center justify-center space-x-2">
                 <Mail className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-                <span>Iniziamo il tuo progetto</span>
+                <span>Contattami</span>
               </span>
             </button>
 
@@ -104,7 +105,7 @@ export default function HeroSection() {
               className="bg-[#60a5fa] hover:bg-[#3b82f6] border border-white/20 hover:border-white/40 text-white font-semibold px-8 py-4 rounded-xl group transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 w-full sm:w-auto"
             >
               <span className="flex items-center justify-center space-x-2">
-                <span>Scopri come lavoro</span>
+                <span>I miei lavori</span>
               </span>
             </button>
           </div>

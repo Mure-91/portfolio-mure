@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { ExternalLink, Search, TrendingUp, Calendar, ShoppingBag, Users } from 'lucide-react';
+import cartotecnicaImg from '../../Immagini/Sito Cartotecnica Vittoria.png';
+import lecoccoleImg from '../../Immagini/Sito Agriturismo Le Coccole.png';
 
 export default function PortfolioSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -138,6 +140,60 @@ export default function PortfolioSection() {
       ],
       iframeUrl: 'https://www.limmobilecostruzioni.it'
     },
+    {
+      id: 5,
+      title: 'Cartotecnica Vittoria',
+      url: 'cartotecnicavittoria.it',
+      link: 'https://www.cartotecnicavittoria.it',
+      description: 'Sito web completo per azienda di packaging con visual AI di espositori personalizzati',
+      tags: ['WordPress', 'Design AI', 'SEO'],
+      icon: '📦',
+      image: cartotecnicaImg,
+      highlights: [
+        { icon: Search, text: 'SEO ottimizzato' },
+        { icon: TrendingUp, text: 'Visual AI espositori' },
+      ],
+      color: 'from-blue-500 to-indigo-500',
+      client: 'Cartotecnica Vittoria',
+      industry: 'Packaging & Printing',
+      year: '2024',
+      challenge: 'L\'azienda non aveva alcun sito web e necessitava di una presenza digitale professionale per mostrare le soluzioni di packaging personalizzate. La sfida principale era creare visual accattivanti di espositori e prodotti senza avere immagini reali disponibili, mantenendo alta la qualità percepita e la professionalità del brand.',
+      solution: 'Ho realizzato un sito web completo da zero utilizzando WordPress, integrando visual di espositori e packaging generati con AI per mostrare i prodotti in scenari realistici e professionali. Implementato design moderno e pulito che valorizza la sostenibilità del brand (certificazioni FSC®) e ottimizzato per conversioni con call-to-action strategiche e navigazione intuitiva.',
+      results: [
+        'Sito web professionale lanciato da zero',
+        'Visual AI di alta qualità per espositori non esistenti',
+        '98/100 Google PageSpeed Score',
+        'Design che valorizza sostenibilità e certificazioni'
+      ],
+      iframeUrl: 'https://www.cartotecnicavittoria.it'
+    },
+    {
+      id: 6,
+      title: 'Agriturismo Le Coccole',
+      url: 'agriturismolecoccole.it',
+      link: 'https://www.agriturismolecoccole.it',
+      description: 'Redesign completo con integrazione booking system mantenendo SEO organico acquisito negli anni',
+      tags: ['WordPress', 'Booking System', 'SEO', 'Redesign'],
+      icon: '🏡',
+      image: lecoccoleImg,
+      highlights: [
+        { icon: Calendar, text: 'Sistema prenotazioni' },
+        { icon: Search, text: 'SEO mantenuto' },
+      ],
+      color: 'from-yellow-500 to-amber-500',
+      client: 'Agriturismo Le Coccole',
+      industry: 'Hospitality & Tourism',
+      year: '2024',
+      challenge: 'Il sito esistente era obsoleto, con contenuti scarsi e nessun sistema di prenotazione online. L\'agriturismo aveva un ottimo posizionamento SEO organico costruito negli anni che rischiava di essere perso durante il redesign. La sfida era modernizzare completamente il sito mantenendo intatto il ranking sui motori di ricerca.',
+      solution: 'Ho eseguito un redesign completo mantenendo la struttura URL esistente e implementando redirect 301 strategici. Integrato sistema di prenotazioni online diretto e ottimizzato i Core Web Vitals per migliorare sia l\'esperienza utente che il ranking SEO. Preservata e migliorata tutta l\'architettura SEO con particolare attenzione alle keyword strategiche del settore turistico rurale.',
+      results: [
+        'Posizionamento SEO mantenuto al 100%',
+        'Sistema prenotazioni online integrato',
+        '95/100 Google PageSpeed Score',
+        '-40% bounce rate sulla home page'
+      ],
+      iframeUrl: 'https://www.agriturismolecoccole.it'
+    },
   ];
 
   return (
@@ -170,13 +226,13 @@ export default function PortfolioSection() {
         {/* Section Title */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in-up">
-            Progetti che fanno la differenza
+            Progetti Realizzati
           </h2>
           <p
             className="text-base sm:text-lg md:text-xl text-white/75 max-w-3xl mx-auto animate-fade-in-up mb-4"
             style={{ animationDelay: '0.2s' }}
           >
-            Ogni progetto è un'opportunità per creare qualcosa di straordinario. Ecco alcuni dei lavori di cui vado più fiero.
+            Soluzioni web concrete per clienti reali
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
         </div>
@@ -210,10 +266,7 @@ export default function PortfolioSection() {
                   <div className={`absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70`}></div>
 
                   {/* Content */}
-                  <div className="relative h-full p-6 sm:p-8 flex items-start justify-between">
-                    <span className="text-5xl sm:text-6xl group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">
-                      {project.icon}
-                    </span>
+                  <div className="relative h-full p-6 sm:p-8 flex items-start justify-end">
                     <a
                       href={project.link}
                       target="_blank"

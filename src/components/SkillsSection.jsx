@@ -64,10 +64,10 @@ export default function SkillsSection() {
           {/* Section Title */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-              Competenze Tecniche
+              Stack Tecnologico
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-white/75 max-w-3xl mx-auto">
-              Stack tecnologico moderno per progetti ad alte prestazioni
+              Le tecnologie che uso per costruire il tuo progetto
             </p>
             <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full mt-4"></div>
           </div>

@@ -18,7 +18,7 @@ export default function Footer() {
               Luca Murelli<span className="text-blue-400">.</span>
             </h3>
             <p className="text-white/60 text-sm sm:text-base leading-relaxed">
-              Sviluppatore Web Freelance specializzato in WordPress, Shopify e soluzioni e-commerce ad alte prestazioni.
+              Sviluppatore Web Freelance specializzato in siti web, e-commerce e soluzioni AI. Realizzo siti web professionali dal 2019
             </p>
           </div>
 
